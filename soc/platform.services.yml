@@ -1,0 +1,13 @@
+# Platform services (enable flags + URLs)
+enable:
+  keycloak: true
+  vault: true
+  gitlab: true
+  nexus: true
+  awx: true
+  nextcloud: true
+  netbox: true
+  observability: true
+urls:
+  traefik_onprem: "https://edge.example.com"
+  traefik_vps: "https://edge.stg.example.com"

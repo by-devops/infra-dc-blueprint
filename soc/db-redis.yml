@@ -1,0 +1,9 @@
+# DB & Redis endpoints per environment
+db:
+  lab: "pgbouncer.db.lab.int.example.com:5432"
+  stg: "pgbouncer.db.stg.int.example.com:5432"
+  prod: "pgbouncer.db.int.example.com:5432"
+redis:
+  lab:  { host: "redis.db.lab.int.example.com",  aof: false }
+  stg:  { host: "redis.db.stg.int.example.com", aof: true }
+  prod: { host: "redis.db.int.example.com",     aof: true }

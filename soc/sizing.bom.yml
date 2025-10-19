@@ -1,0 +1,9 @@
+# Bill of Materials — drives Proxmox/K3s/VPS provisioning
+hosts:
+  HOM-PVE-01: { cpu: 24, ram_gb: 128, os: "Debian 12", os_disk: "2xSSD", data_disk: "2xSSD" }
+services:
+  keycloak:  { provision: { type: vm, hypervisor: HOM-PVE-01, template: debian12-cloudinit, vcpu: 4, ram_gb: 8,  disk_gb: 50, vlan: 99 } }
+  vault:     { provision: { type: vm, hypervisor: HOM-PVE-01, template: debian12-cloudinit, vcpu: 2, ram_gb: 4,  disk_gb: 30, vlan: 99 } }
+  gitlab:    { provision: { type: vm, hypervisor: HOM-PVE-01, template: debian12-cloudinit, vcpu: 8, ram_gb: 16, disk_gb: 200, vlan: 99 } }
+  nextcloud: { provision: { type: vm, hypervisor: HOM-PVE-01, template: debian12-cloudinit, vcpu: 4, ram_gb: 8,  disk_gb: 50, vlan: 99 } }
+  k3s-lab:   { provision: { type: vm, hypervisor: HOM-PVE-01, template: debian12-cloudinit, vcpu: 4, ram_gb: 16, disk_gb: 100, vlan: 30 } }

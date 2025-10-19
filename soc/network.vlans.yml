@@ -1,0 +1,7 @@
+# VLAN Catalogue (authoritative)
+vlans:
+  - { id: 99,  name: ADMIN,       v4: "10.99.0.0/24",   v6: "2a02:xxxx:xxxx:0099::/64", egress: telenet }
+  - { id: 98,  name: OOB,         v4: "10.98.0.0/24",   v6: null,                        egress: blocked }
+  - { id: 41,  name: WIFI_GUEST,  v4: "10.41.0.0/24",   v6: null,                        egress: wg_vps }
+  - { id: 42,  name: WIFI_OFFICE, v4: "10.42.0.0/24",   v6: "2a02:xxxx:xxxx:0042::/64",  egress: telenet }
+  - { id: 20,  name: DMZ,         v4: "10.20.0.0/24",   v6: "2a02:xxxx:xxxx:0020::/64",  egress: telenet }

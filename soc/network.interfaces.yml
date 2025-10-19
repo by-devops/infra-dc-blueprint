@@ -1,0 +1,6 @@
+# Interface/Bridge mapping
+bridges:
+  - { name: vmbr0, description: "VLAN-aware trunk to core switch" }
+wan_links:
+  - { name: wan_telenet, type: static, ipv4_cidr: "213.214.47.216/29", gw: "213.214.47.217" }
+  - { name: wan_proximus, type: pppoe }

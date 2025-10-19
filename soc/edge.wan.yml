@@ -1,0 +1,12 @@
+# WAN & VIP plan
+wan:
+  telenet:
+    ipv4_cidr: "213.214.47.216/29"
+    gw: "213.214.47.217"
+    vips:
+      traefik: "213.214.47.220"
+      mail: "213.214.47.221"
+  proximus:
+    pppoe: true
+nat:
+  outbound: hybrid

@@ -1,0 +1,8 @@
+# Firewall Aliases (examples)
+networks:
+  - { name: NET_ADMIN,   cidr: "10.99.0.0/24" }
+  - { name: NET_DMZ,     cidr: "10.20.0.0/24" }
+hosts: []
+port_sets:
+  - { name: PORTSET_WEB, ports: "80,443" }
+schedules: []

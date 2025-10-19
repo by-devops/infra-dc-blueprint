@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Python/venv
+.venv/
+__pycache__/
+
+# Ansible
+*.retry
+*.vault
+.cache/
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Misc
+*.zip
+tmp/

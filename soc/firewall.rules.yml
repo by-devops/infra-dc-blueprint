@@ -1,0 +1,13 @@
+# Firewall rules model (group baselines + VLAN overrides)
+groups:
+  IFG_MGMT:
+    allow:
+      - { proto: tcp, dst: "pfSense", ports: "443" }
+      - { proto: udp, dst: "pfSense", ports: "53" }
+    deny:
+      - { any: true }
+vlans:
+  WIFI_GUEST:
+    policy_route: wg_vps
+    kill_switch: true
+    allow_dns_redirect: true
